@@ -45,7 +45,8 @@ class ElGamal():
 # last paramerter(n) must be a prime
 curve = EC(1, 15, 19)
 
-eg = ElGamal(curve)
+eg = ElGamal(curve) # generator point is automatically generated
+                    # and is random among available generators
 
 private = 143
 pub = eg.get_public(private)
