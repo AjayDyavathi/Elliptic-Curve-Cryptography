@@ -1,3 +1,5 @@
+from EC import EC
+
 class DiffieHellman():
     '''Elliptic Curve Diffie Hellman(ECDH) Key Exchange'''
 
