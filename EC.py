@@ -14,7 +14,10 @@ class EC():
         self.a = a
         self.b = b
         self.n = n
-        self.inf = (0, 0)
+        self.inf = point(0, 0)
+
+    def negate(self, p):
+        return point(p.x, -p.y % self.n)
 
     def on_curve(self, p):
         '''verifys if the point lie on the curve'''
@@ -104,6 +107,3 @@ class EC():
         '''Calculate public_point from private number'''
         print('now', gen)
         return self.multiply(gen, private)
-
-
-
