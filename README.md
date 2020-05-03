@@ -18,6 +18,4 @@ The chosen curve for the implementation is (a=1, b=15, n=19), where curve equati
  * point-addition n times O(n) OR 
  * add_and_double method O(logn) 
  
- I'll update with ECDSA soon.
- 
  Note: this code is for basic understanding, the parameters in real-life implementations are large.
